@@ -1,0 +1,40 @@
+* {
+    font-family: Roboto;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+}
+
+#nome-tarefa {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+input, button {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: rgb(39, 167, 39);
+    color: white;
+}
+
+#tarefas{
+    padding: 0;
+}
+
+#tarefas li {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+#tarefas li.completa{
+    text-decoration: line-through;
+    color: gray;
+    cursor: pointer;
+}
