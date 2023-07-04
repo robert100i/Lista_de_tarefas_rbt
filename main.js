@@ -1,12 +1,10 @@
-$(document).ready(function() {
-    $("#nome-tarefa").submit(function(e) {
-    e.preventDefault();
+    $(document).ready(function() {
+        $("#nome-tarefa").submit(function(e) {
+        e.preventDefault();
     
     var tarefaTexto = $("#input-tarefa").val();
 
-        $("#tarefas li").click(function() {
-        $(this).toggleClass("completa");
-        });
+        
 
     if (tarefaTexto !== "") {
         var tarefaItem = $("<li>").text(tarefaTexto);
@@ -16,4 +14,8 @@ $(document).ready(function() {
         
     }
 });
+
+    $("#tarefas").on("click","li",function() {
+        $(this).toggleClass("completa");
+        });
 });
